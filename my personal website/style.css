@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Yanone+Kaffeesatz&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(fifty.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.git-logo :hover{
+    color: #1DA4C9;
+}
+
+.ig-logo :hover{
+    color: #e70d0d;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #1DA4C9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.about{
+    margin: 45px;
+    padding-left: 70px;
+    gap: 20px;
+}
+
+.about h1{
+    background: linear-gradient(to top, #edb407, #e8fc03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.about p{
+    color: #edb407;
+    font-size: x-large;
+}
+
+.bandc{
+    margin: 45px;
+    padding-left: 70px;
+    font-size: x-large;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bandc h2{
+    background: linear-gradient(to top, #edb407, #e8fc03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bandc p{
+    color: bisque;
+}
+
+.lang1{
+    border: solid 1px #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 115px;
+}
+
+.lang2{
+    border: solid 1px #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 115px;
+}
+
+.lang1:hover{
+    background-color: #4c4c4c;
+    color: #fe9760;
+}
+
+.lang2:hover{
+    background-color: #4c4c4c;
+    color: #6ba1ff;
+}
+
+.languages{
+    margin: 45px;
+    padding-left: 70px;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.languages h3{
+    background: linear-gradient(to top, #edb407, #e8fc03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.languages p{
+    color:bisque;
+}
+
+.py{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #2d2d2d;
+    width: 202px;
+    cursor: pointer;
+}
+
+.py:hover{
+    background-color: #4c4c4c;
+    color: #fcf803;
+}
+
+.languases, bandc{
+    line-height: 20px
+}
+
+.id{
+    display: flex;
+    font-size: medium;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.last{
+    color: white;
+}
+
+.EM{
+    color: #edb407;
+    cursor: pointer;
+}
