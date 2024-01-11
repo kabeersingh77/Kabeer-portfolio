@@ -10,13 +10,13 @@
     height: 100vh;
 }
 
-@media (min-width: 300px) and (max-width:600px){
+@media (min-width: 300px) and (max-width: 600px){
 body{
     background-color: #2d2d2d;
 }
 }
 
-@media (min-width:601px){
+@media (min-width: 601px) and (max-width: 2500px){
     body{
         background-image: url(fifty.jpg);
     }
