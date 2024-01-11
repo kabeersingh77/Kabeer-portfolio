@@ -8,9 +8,18 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-image: url(fifty.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+@media (min-width: 300px) and (max-width:600px){
+body{
+    background-color: #2d2d2d;
+}
+}
+
+@media (min-width:601px){
+    body{
+        background-image: url(fifty.jpg);
+    }
 }
 
 .git-logo :hover{
