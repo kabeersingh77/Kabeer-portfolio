@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Yanone+Kaffeesatz&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    background-color:  #10232a;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    font: bolder;
+}
+
+nav a:hover{
+    color: rgba(196, 166, 0, 0.996) !important;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #10232a;
+    min-height: 100vh;
+    align-items: center;
+}
+
+nav{
+    background-color: #10232a;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(1, 1, 1, 0.5);
+}
+
+.footer{
+    background-color: #10232a;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 85px;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    box-shadow: 0 5px 80px  rgba(1, 1, 1, 0.5);
+}
+
+nav a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav .logo h2{
+    pointer-events: none;
+    color: #988f88;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav button{
+    color: #a79e9c;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #a79e9c;
+    transition: 0.3s ease;
+}
+
+nav button:hover{
+    color: #10232a;
+    background-color: #d3c3b9;
+}
+
+.toggle_btn{
+    display: none;
+    color: #a79e9c;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: none;
+    padding: 7px;
+}
+
+.toggle_btn:hover{
+    color: rgba(196, 166, 0, 0.996);
+}
+
+#home{
+    padding: 50px;
+    gap: 5%;
+}
+.main{
+    background: #162f39;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    justify-content: space-between;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+h5{
+    background-color: #162f39;
+}
+
+.main h3, span{
+    background-color: #162f39;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.main h3 .wd{
+    color: #b58863;
+}
+
+.main h3 .app{
+    color: rgb(91, 0, 203);
+}
+
+.active{
+    color: rgba(196, 166, 0, 0.996);
+}
+
+.hire:active{
+    scale: 0.96;
+}
+
+.mail {
+    list-style: none;
+    text-decoration: none;
+    font-size: medium;
+    color: #ffcc00;
+}
+
+.footer p{
+    color: #fff;
+}
+
+.page_img{
+    right: 10%;
+    width: 300px;
+}
+#links{
+    position: absolute;
+    display: none;
+    width: 0;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+#links i{
+    font: bolder;
+    font-size: 20px;
+    right: 8%;
+}
+
+#links.open{
+    margin-left: 70%;
+    display: block;
+    width: 100px;
+    font-size: 20px;
+}
+
+.languages{
+    z-index: 1;
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 25vh;
+}
+
+.languages .item{
+    background: #162f39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    gap: 2em;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.headings{
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    margin-bottom: 70vh;
+    margin-right: 25em;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.headings h2{
+    color: #b58863;
+}
+
+.heading2{
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    margin-top: 6em;
+    right: 22em;
+    flex-direction: column;
+}
+
+.heading3{
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 20em;
+    margin-right: 30.5em;
+}
+
+.languages .info, .languages .icon{
+    font-size: 35px;
+    color: #fff;
+}
+.languages i, .languages h4{
+    background: #162f39;
+}
+
+.languages .item:hover, .programming_lang .lang:hover, .oth .git:hover{
+    border-bottom-color: #fff;
+}
+
+.languages .item, .languages h4, .languages .icon{
+    border: 6px solid transparent;
+    background-color: #162f39;
+}
+
+.languages i, .programming_lang i, .oth i{
+    height: 40px;
+    width: 40px;
+    background: #988f88;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tailwind h4{
+    font-size: 25px;
+}
+
+#html i{
+    color: #ffc400;
+}
+
+#css i{
+    color: yellow;
+}
+
+#tailwind i{
+    color: aqua;
+}
+.programming_lang{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    position: absolute;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-top: 65vh;
+}
+
+.programming_lang .lang{
+    background: #162f39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    gap: 2em;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    color: #fff;
+}
+
+.oth .git{
+    background: #162f39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    gap: 2em;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    color: #fff;
+}
+
+.programming_lang .lang, .programming_lang h4, .programming_lang .icon{
+    border: 6px solid transparent;
+    background-color: #162f39;
+}
+
+.oth{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    position: absolute;
+    flex-wrap: nowrap;
+}
+
+.oth .git, .oth h4, .oth .icon{
+    border: 6px solid transparent;
+    background-color: #162f39;
+}
+
+
+#js i{
+    color: gold;
+}
+
+#py i{
+    color: rgb(0, 119, 255);
+}
+
+.git i{
+    color: orange;
+}
+
+.oth{
+    top: 200vh;
+    left: 23vh;
+}
+
+#about h2{
+    color: #fff;
+    font-size: 35px;
+    display: inline;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+#about p{
+    margin-right: 8%;
+    margin-top: 18%;
+    color: #fff;
+    font-weight: 100;
+    padding: 80px;
+    font-size: 25px;
+    border: 1px solid transparent;
+    background-color: #162f39;
+    border-radius: 10px;
+}
+
+#gig .work h2{
+    color: #fff;
+    display: inline;
+    font-size: 38px;
+    position: absolute;
+    right: 84%;
+    top: 61em;
+}
+
+.project1{
+    background-color: #162f39;
+    border: 4px solid transparent;
+    border-radius: 15px;
+    font: 20px;
+    color: #fff;
+    transition: 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.project1 img{
+    border: solid 4px #162f39;
+    border-radius: 10px;
+    width: 450px;
+    overflow: hidden;
+    border-width: 80%;
+    background-color: #162f39;
+}
+
+.project1 p{
+    background-color: #162f39;
+}
+
+.project1:hover{
+    scale: 1.09;
+    border-bottom-color: #fff;
+}
