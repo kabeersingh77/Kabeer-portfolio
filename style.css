@@ -33,6 +33,7 @@ section{
     display: flex;
     background: #10232a;
     min-height: 100vh;
+    align-items: center;
 }
 
 nav{
@@ -392,13 +393,16 @@ h5{
     padding: 80px;
 }
 
+.work{
+    gap: 20px;
+}
+
 #gig .work h2{
     color: #fff;
     display: inline;
     font-size: 38px;
-    position: absolute;
-    left: 8%;
-    top: 61em;
+    position: relative;
+    bottom: 20px;
 }
 
 .project1{
@@ -594,7 +598,8 @@ h5{
 
 @media screen and (max-width: 360px){
     #gig .work h2{
-        display: none;
-        top: 0;
+        display: block;
+        padding: 0;
+        top: 280vh;
     }
 }
