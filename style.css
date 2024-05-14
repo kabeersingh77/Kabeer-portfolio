@@ -119,7 +119,7 @@ nav button:hover{
     align-items: start;
     padding: 30px;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
     border-radius: 10px;
     border: 2px solid transparent;
 }
@@ -187,9 +187,10 @@ h5{
 }
 
 .languages{
+    position: relative;
     z-index: 1;
     margin-top: 50px;
-    padding: 0 50px;
+    padding: 0;
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
@@ -216,7 +217,7 @@ h5{
     color: #fff;
     position: absolute;
     margin-bottom: 70vh;
-    margin-right: 25em;
+    left: 8%;
     gap: 2em;
     flex-direction: column;
 }
@@ -230,7 +231,7 @@ h5{
     color: #fff;
     position: absolute;
     margin-top: 6em;
-    right: 22em;
+    left: 8%;
     flex-direction: column;
 }
 
@@ -240,7 +241,7 @@ h5{
     position: absolute;
     flex-direction: column;
     margin-top: 20em;
-    margin-right: 30.5em;
+    left: 8%;
 }
 
 .languages .info, .languages .icon{
@@ -286,13 +287,13 @@ h5{
     color: aqua;
 }
 .programming_lang{
-    margin-top: 50px;
     padding: 0 50px;
     display: flex;
     position: absolute;
     flex-wrap: nowrap;
     gap: 24px;
     margin-top: 65vh;
+    justify-content: left;
 }
 
 .programming_lang .lang{
@@ -335,11 +336,12 @@ h5{
 }
 
 .oth{
-    margin-top: 50px;
     padding: 0 50px;
     display: flex;
-    position: absolute;
+    position: relative;
     flex-wrap: nowrap;
+    top: 29em;
+    right: 35em;
 }
 
 .oth .git, .oth h4, .oth .icon{
@@ -360,30 +362,35 @@ h5{
     color: orange;
 }
 
-.oth{
-    top: 200vh;
-    left: 23vh;
+#about{
+    padding: 80px;
 }
 
 #about h2{
     color: #fff;
-    font-size: 35px;
+    font-size: 40px;
     display: inline;
     flex-direction: row;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    position: absolute;
+    left: 8%;
+    top: 230vh;
 }
 
 #about p{
-    margin-right: 8%;
+    left: 8%;
     margin-top: 18%;
     color: #fff;
     font-weight: 100;
     padding: 80px;
+    width: 90%;
     font-size: 25px;
     border: 1px solid transparent;
     background-color: #162f39;
     border-radius: 10px;
+}
+
+#gig{
+    padding: 80px;
 }
 
 #gig .work h2{
@@ -391,7 +398,7 @@ h5{
     display: inline;
     font-size: 38px;
     position: absolute;
-    right: 84%;
+    left: 8%;
     top: 61em;
 }
 
@@ -422,4 +429,147 @@ h5{
 .project1:hover{
     scale: 1.09;
     border-bottom-color: #fff;
+}
+
+@media screen and (max-width:856px){
+    nav .logo{
+        font-size: 13px;
+    }
+    nav a{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:746px){
+    nav ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 510px){
+    nav{
+        height: 120px;
+    }
+    nav .logo{
+        font-size: large;
+    }
+    .page_img{
+        position: relative;
+        left: 80%;
+    }
+    .main{
+        position: relative;
+        align-items: center;
+        left: 14em;
+        padding: 0;
+        margin-left: 0;
+        margin: 0;
+        width: 27em;
+        flex-direction: column;
+    }
+
+    .main h5{
+        width: 27em;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main h3{
+        width: 9em;
+        height: 8em;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #about p{
+        margin-top: 20em;
+        width: 90%;
+    }
+
+    #links.open{
+        margin-left: 50%;
+    
+    }
+    .footer{
+        width: 90vh;
+    }
+
+    .footer p{
+        font-size: 20px;
+    }
+
+    .project1{
+        justify-content: center;
+        margin-left: 45%;
+        width: 50vh;
+        margin-top: 10vh;
+    }
+
+    .work h2{
+        position: relative;
+        margin-top: 32em;
+        left: 2em;
+    }
+
+    .languages, .programming_lang, .oth{
+        flex-direction: column;
+    }
+
+    .languages{
+        top: 10vh;
+        left: 139%;
+    }
+
+    .heading2{
+        top: 150vh;
+    }
+
+    .programming_lang{
+        top: 140vh;
+        left: 4%;
+    }
+    
+    .heading3{
+        top: 160vh;
+    }
+
+    .oth{
+        top: 105vh;
+        right: 33%;
+    }
+    
+    .programming_lang .lang{
+        width: 26em;
+    }
+
+    .languages .item{
+        width: 40em;
+    }
+    .oth .git{
+        width: 26em;
+    }
+
+    #about{
+        padding-top: 30vh;
+        width: 40em;
+        justify-content: center;
+        padding-left: 50%;
+    }
+
+    #about h2{
+        top: 270vh;
+        position: absolute;
+        font-size: 45px;
+        left: 8%;
+    }
+
+    #about p{
+        width: 33em;
+        justify-content: center;
+    }
+
+    .work h2{
+        padding-top: 20vh;
+        font-size: 45px;
+    }
 }
