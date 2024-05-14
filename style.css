@@ -572,3 +572,29 @@ h5{
         font-size: 45px;
     }
 }
+
+@media screen and (max-width: 380px){
+    .heading3{
+        display: none;
+    }
+    #gig .work h2{
+        position: absolute;
+        padding-top: 0;
+        padding-bottom: 60vh;
+    }
+    .project1{
+        width: 100%;
+    }
+    .footer{
+        top: 10vh;
+        width: 50em;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #gig .work h2{
+        display: none;
+        top: 0;
+    }
+}
