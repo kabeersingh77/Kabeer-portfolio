@@ -92,16 +92,6 @@ nav button:hover{
     background-color: #d3c3b9;
 }
 
-.toggle_btn{
-    display: none;
-    color: #a79e9c;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    border: none;
-    padding: 7px;
-}
-
 .toggle_btn:hover{
     color: rgba(196, 166, 0, 0.996);
 }
@@ -434,19 +424,70 @@ h5{
     border-bottom-color: #fff;
 }
 
+.toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+    position: fixed;
+    right: 3%;
+}
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    right: 2.5rem;
+    top: 125px;
+    width: 250px;
+    height: 0;
+    background-color: #162f39;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 200;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropmenu.open{
+    height: 400px;
+}
+
+.dropmenu ul li a{
+    background-color: #162f39;
+    display: flex;
+    width: 240px;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width:856px){
     nav .logo{
         font-size: 13px;
     }
-    nav a{
-        font-size: 8px;
+    .dropmenu ul{
+        background-color: #162f39;
+        gap: 10px;
+        display: block;
+    }
+
+    .dropmenu{
+        display: block;
+        position: fixed;
     }
 }
 
 @media screen and (max-width:746px){
+    nav .toggle_btn{
+        display: block;
+    }
+
     nav ul{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 510px){
