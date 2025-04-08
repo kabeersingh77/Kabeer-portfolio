@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+____  __.     ___.                           _________.__               .__   ._.
+|    |/ _|____ \_ |__   ____   ___________   /   _____/|__| ____    ____ |  |__| |
+|      < \__  \ | __ \_/ __ \_/ __ \_  __ \  \_____  \ |  |/    \  / ___\|  |  \ |
+|    |  \ / __ \| \_\ \  ___/\  ___/|  | \/  /        \|  |   |  \/ /_/  >   Y  \|
+|____|__ (____  /___  /\___  >\___  >__|    /_______  /|__|___|  /\___  /|___|  /_
+        \/    \/    \/     \/     \/                \/         \//_____/      \/\/ -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kabeer's Portfolio</title>
+  </head>
+  <body
+    class="bg-[#090b0d] block font-roboto bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)]"
+  >
+    <nav
+      id="nav"
+      class="p-[0 86px] py-4 mx-2 fixed bg-transparent flex justify-between z-[100] w-full none"
+    >
+      <img
+        id="navLogo"
+        src="assets/logo.svg"
+        class="h-16 rounded-[50%] px-4 mx-16 pointer-events-none transition-opacity duration-500"
+      />
+      <ul
+        id="containing"
+        class="grid grid-cols-4 rounded-[20px] w-[22%] backdrop-blur-sm p-[20px_20px] top-10 left-[15pc] text-center relative transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)]"
+      >
+        <li
+          class="mx-2 text-[#8d8888] rounded-lg transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:-translate-y-1"
+        >
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li
+          class="mx-2 text-[#8d8888] rounded-lg transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:-translate-y-1"
+        >
+          <a href="#about" class=" ">About</a>
+        </li>
+        <li
+          class="mx-2 text-[#8d8888] rounded-lg transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:-translate-y-1"
+        >
+          <a href="#skills" class=" ">Skills</a>
+        </li>
+        <li
+          class="mx-2 text-[#8d8888] rounded-lg transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:-translate-y-1"
+        >
+          <a href="#projects" class=" ">Projects</a>
+        </li>
+      </ul>
+      <i
+        class="hidden bx bx-menu bx-md text-[#e6e6e6] rounded-lg h-10 my-2 right-[2vh] active:text-[#f88d97]"
+      ></i>
+      <button
+        id="dropdownBtn"
+        onclick="toggleDropMenu()"
+        type="button"
+        class="backdrop-blur-md text-[#8c8c8c] mx-[99px] my-2 right-[2vh] bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] border-[3px] border-[#787878] rounded-lg w-20 transition-colors ease-in-out duration-200 hover:text-[#cdcdcd] active:text-[#cdcdcd] active:scale-95"
+      >
+        Hire Me
+      </button>
+    </nav>
+    <div
+      id="dropMenu"
+      class="fixed right-0 z-10 hidden transition-transform ease-in-out duration-200"
+    >
+      <div
+        class="rounded grid grid-cols-5 absolute right-3 w-[9pc] p-2 m-20 bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] transition-color ease-in-out duration-200 hover:text-[#cdcdcd] active:text-[#cdcdcd]"
+      >
+        <a href="https://discord.com/users/754340194836021290 "
+          ><i
+            class="bx bxl-discord-alt bx-sm text-[#8c8c8c] relative transition-all ease-in-out duration-200 hover:text-[#cdcdcd] hover:translate-y-1"
+          ></i
+        ></a>
+        <a href="https://www.instagram.com/kabeer_singh_77/"
+          ><i
+            class="bx bxl-instagram bx-sm text-[#8c8c8c] relative transition-all ease-in-out duration-200 hover:text-[#cdcdcd] hover:translate-y-1"
+          ></i
+        ></a>
+        <a href="https://github.com/kabeersingh77"
+          ><i
+            class="bx bxl-github bx-sm text-[#8c8c8c] relative transition-all ease-in-out duration-200 hover:text-[#cdcdcd] hover:translate-y-1"
+          ></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/kabeer-singh-217831323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ><i
+            class="bx bxl-linkedin-square bx-sm text-[#8c8c8c] relative transition-all ease-in-out duration-200 hover:text-[#cdcdcd] hover:translate-y-1"
+          ></i
+        ></a>
+        <a href="mailto:kabeersing337@gmail.com"
+          ><i
+            class="bx bxl-gmail bx-sm text-[#8c8c8c] relative transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:translate-y-1"
+          ></i
+        ></a>
+      </div>
+    </div>
+
+    <section id="home" class="p-20 justify-center flex items-center h-[100vh]">
+      <div
+        id="introCard"
+        class="group border-[2px] border-[rgba(255,255,255,0.1)] overflow-hidden flex relative h-[60vh] w-[180vh] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(34,211,238,0.2)] hover:via-[rgba(34,211,238,0.1)] hover:to-[rgba(324,211,238,0.0)]"
+      >
+        <div class="flex-col intro flex-shrink text-wrap">
+          <h2
+            class="tracking-wide font-roboto text-[3rem] text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 via bg-purple-300 to-purple-800 text-[#bdbdbd] flex-shrink flex-row justify-left items-center mb-[2rem] transition-transform ease-in duration-200 group-hover:-translate-y-2"
+          >
+            Hello There
+          </h2>
+          <h3
+            class="text-[40px] mr-[3rem] pt-[1px] flex-col text-slate-300 transition-transform ease-in duration-200 group-hover:-translate-y-2"
+          >
+            I am Kabeer. An India Based
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 via bg-purple-300 to-purple-800"
+              >Frontend web developer</span
+            >. Thanks for reaching out to me.
+          </h3>
+        </div>
+        <img
+          src="/assets/logo.svg"
+          alt="logo"
+          class="justify-center items-center rounded-xl h-80"
+        />
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="p-20 justify-center flex items-center h-[100vh] border-t-[2px] border-[rgba(255,255,255,0.1)] flex-col place-content-evenly"
+    >
+      <h1 class="text-[#cdcdcd] text-[40px] mb-20">
+        About <span class="text-neutral-500">Me</span>
+      </h1>
+      <div
+        class="flex flex-wrap h-[22rem] w-[65%] group border-[2px] border-[rgba(255,255,255,0.1)] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(144,79,248,0.2)] hover:via-[rgba(157,10,226,0.1)] hover:to-[rgba(324,211,238,0.0)]"
+      >
+        <p
+          class="flex-col p-3 text-slate-300 text-[30px] transition-transform ease-in duration-200 group-hover:-translate-y-2"
+        >
+          Hello there, I am Kabeer Singh and I am an India based frontend
+          website developer and also a discord web developer. I work according
+          to the client's preferences to make things more connected and
+          relatable to customer. It will be a pleasure to work with you. Thanks
+          for reaching out here.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="p-20 justify-center flex items-center h-[100vh] mb-20 flex-col place-content-evenly"
+    >
+      <h1 class="text-[#cbc4c4] text-[40px] mb-20">Skills</h1>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i
+            class="bx bxl-python text-7xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-500"
+          ></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bxl-javascript text-7xl text-yellow-500"></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bxl-html5 text-7xl text-orange-600"></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bxl-css3 text-7xl text-blue-500"></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bx-git-branch text-7xl text-orange-400"></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bxl-tailwind-css text-7xl text-cyan-300"></i>
+        </div>
+        <div class="rounded-2xl border-4 border-[rgba(255,255,255,0.1)]">
+          <i class="bx bxl-postgresql text-7xl text-blue-400"></i>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="projects"
+      class="p-20 justify-center flex items-center h-[100vh] place-content-evenly flex-col"
+    >
+      <h1 class="text-[#cbc4c4] text-[40px] mb-20">Projects</h1>
+      <div class="h-full flex items-center justify-center relative flex-wrap">
+        <div
+          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] saturate-50 bg-[url('assets/astromaestroweb.png')] bg-cover bg-center relative transition-width duration-500 hover:w-[1000px] cursor-pointer hover:saturate-100"
+        >
+          <a
+            href="https://kabeersingh77.github.io/Test-repo/"
+            class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] to-[rgba(255,255,255,0.1)] text-white justify-center top-9 mt-[33rem] py-6 left-8 flex text-center bottom-0 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-purple-700"
+            >Astromaestro<i class="bx bx-right-arrow-alt bx-sm"></i
+          ></a>
+        </div>
+        <div
+          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] saturate-50 bg-[url('assets/elesyaweb.png')] bg-cover bg-center relative transition-width duration-500 hover:w-[1000px] cursor-pointer hover:saturate-100"
+        >
+          <a
+            href="elesya.html"
+            class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)] text-white justify-center top-9 mt-[33rem] py-6 left-8 flex text-center bottom-0 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-pink-400"
+            >Elesya<i class="bx bx-right-arrow-alt bx-sm"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="border-t-[1px] m-20 shadow-white bg-[#090b0d] text-white text-lg bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)]"
+    >
+      <p class="ml-[10rem] mt-10">&copy; Copyright 2025 by Kabeer Singh</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
