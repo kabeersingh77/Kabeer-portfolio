@@ -15,7 +15,7 @@ ____  __.     ___.                           _________.__               .__   ._
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="public/logo.svg" />
+    <link rel="icon" href="/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,13 +28,21 @@ ____  __.     ___.                           _________.__               .__   ._
   <body
     class="bg-[#090b0d] block font-roboto bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)]"
   >
+    <div
+      id="cursor"
+      class="top-0 left-0 fixed z-30 -translate-x-[20%] -translate-y-[20%] hidden md:block"
+    ></div>
+    <div
+      id="cursor-outline"
+      class="fixed w-8 h-8 bg-slate-700 opacity-30 border-2 border-white top-0 left-0 rounded-full z-20 pointer-events-none -translate-x-[50%] -translate-y-[50%]"
+    ></div>
     <nav
       id="nav"
       class="p-[0 86px] py-4 md:mx-2 fixed bg-transparent flex justify-center md:justify-between z-[100] md:w-full none"
     >
       <img
         id="navLogo"
-        src="public/logo.svg"
+        src="/logo.svg"
         class="h-16 rounded-[50%] px-4 mx-16 pointer-events-none transition-opacity duration-500"
       />
       <ul
@@ -132,7 +140,7 @@ ____  __.     ___.                           _________.__               .__   ._
           </h3>
         </div>
         <img
-          src="/public/logo.svg"
+          src="/logo.svg"
           alt="logo"
           class="justify-center items-center rounded-xl h-80 md:block hidden"
         />
@@ -202,7 +210,7 @@ ____  __.     ___.                           _________.__               .__   ._
         class="h-full flex items-center justify-center relative flex-col md:flex-wrap"
       >
         <div
-          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('public/astromaestroweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
+          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/astromaestroweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
         >
           <a
             href="https://astromaestro.vercel.app/"
@@ -211,7 +219,7 @@ ____  __.     ___.                           _________.__               .__   ._
           ></a>
         </div>
         <div
-          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('public/elesyaweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
+          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/elesyaweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
         >
           <a
             href="/work-elesya.html"
