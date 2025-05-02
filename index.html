@@ -29,6 +29,12 @@ ____  __.     ___.                           _________.__               .__   ._
     class="bg-[#090b0d] block font-roboto bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)]"
   >
     <div
+      id="preloader"
+      class="bg-[#090b0d] h-[100vh] w-full fixed z-50 items-center justify-center text-center"
+    >
+      <span id="loader" class="mt-[50vh]"></span>
+    </div>
+    <div
       id="cursor"
       class="top-0 left-0 fixed z-30 -translate-x-[20%] -translate-y-[20%] hidden lg:block"
     ></div>
@@ -38,7 +44,7 @@ ____  __.     ___.                           _________.__               .__   ._
     ></div>
     <nav
       id="nav"
-      class="p-[0 86px] py-4 md:mx-2 fixed bg-transparent flex justify-center md:justify-between z-[100] md:w-full none"
+      class="p-[0 86px] py-4 md:mx-2 fixed bg-transparent flex justify-center md:justify-between z-40 md:w-full"
     >
       <img
         id="navLogo"
@@ -47,7 +53,7 @@ ____  __.     ___.                           _________.__               .__   ._
       />
       <ul
         id="containing"
-        class="hidden grid-cols-4 rounded-[20px] w-[22%] backdrop-blur-sm p-[20px_20px] top-10 left-[15pc] text-center relative transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] md:grid"
+        class="hidden grid-cols-4 rounded-[20px] w-[22%] backdrop-blur-sm p-[20px_20px] top-10 left-[15pc] text-center relative transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] xl:grid"
       >
         <li
           class="mx-2 text-[#8d8888] rounded-lg transition-color ease-in-out duration-200 hover:text-[#cdcdcd] hover:-translate-y-1"
@@ -155,7 +161,7 @@ ____  __.     ___.                           _________.__               .__   ._
         About <span class="text-neutral-500">Me</span>
       </h1>
       <div
-        class="md:flex md:flex-wrap md:h-[22rem] h-[28rem] md:w-[65%] w-full group border-[2px] border-[rgba(255,255,255,0.1)] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 md:px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(144,79,248,0.2)] hover:via-[rgba(157,10,226,0.1)] hover:to-[rgba(324,211,238,0.0)]"
+        class="xl:flex xl:flex-wrap xl:h-[22rem] h-[28rem] xl:w-[65%] w-full group border-[2px] border-[rgba(255,255,255,0.1)] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 md:px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(144,79,248,0.2)] hover:via-[rgba(157,10,226,0.1)] hover:to-[rgba(324,211,238,0.0)]"
       >
         <p
           class="md:flex-col md:p-3 m-[3vh] text-slate-300 md:text-[30px] transition-transform ease-in duration-200 group-hover:-translate-y-2"

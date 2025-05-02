@@ -85,3 +85,8 @@ window.addEventListener("mousemove", function(e) {
         top: `${posY}px`
         },{ duration: 500, fill: "forwards"});
 });
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+});
