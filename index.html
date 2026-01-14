@@ -44,12 +44,12 @@ ____  __.     ___.                           _________.__               .__   ._
     ></div>
     <nav
       id="nav"
-      class="p-[0 86px] py-4 md:mx-2 fixed bg-transparent flex justify-center md:justify-between z-40 md:w-full"
+      class="p-[0 86px] py-4 md:mx-2 fixed bg-transparent flex justify-between md:justify-between z-40 w-full"
     >
       <img
         id="navLogo"
         src="/logo.svg"
-        class="h-16 rounded-[50%] px-4 mx-16 pointer-events-none transition-opacity duration-500"
+        class="h-16 rounded-[50%] px-4 mx-2 md:mx-16 pointer-events-none transition-opacity duration-500"
       />
       <ul
         id="containing"
@@ -83,7 +83,7 @@ ____  __.     ___.                           _________.__               .__   ._
         id="dropdownBtn"
         onclick="toggleDropMenu()"
         type="button"
-        class="backdrop-blur-md text-[#8c8c8c] md:mx-[99px] my-2 right-[2vh] bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] border-[3px] border-[#787878] rounded-lg w-20 transition-colors ease-in-out duration-200 hover:text-[#cdcdcd] active:text-[#cdcdcd] active:scale-95"
+        class="backdrop-blur-md text-[#8c8c8c] md:mx-[99px] my-2 mr-8 bg-gradient-to-b from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-[rgba(255,255,255,0.1)] border-[3px] border-[#787878] rounded-lg w-20 transition-colors ease-in-out duration-200 hover:text-[#cdcdcd] active:text-[#cdcdcd] active:scale-95"
       >
         Hire Me
       </button>
@@ -124,19 +124,22 @@ ____  __.     ___.                           _________.__               .__   ._
       </div>
     </div>
 
-    <section id="home" class="p-20 justify-center flex items-center h-[100vh]">
+    <section
+      id="home"
+      class="p-[2vh] justify-center flex items-center h-[100vh]"
+    >
       <div
         id="introCard"
         class="group border-[2px] border-[rgba(255,255,255,0.1)] overflow-hidden flex flex-col relative h-[60vh] w-[180vh] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(34,211,238,0.2)] hover:via-[rgba(34,211,238,0.1)] hover:to-[rgba(324,211,238,0.0)] md:flex-row"
       >
         <div class="flex-col intro flex-shrink text-wrap">
           <h2
-            class="tracking-wide font-roboto md:text-[3rem] text-[2rem] text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 via bg-purple-300 to-purple-800 text-[#bdbdbd] flex-shrink flex-row justify-left items-center mb-[2rem] transition-transform ease-in duration-200 group-hover:-translate-y-2"
+            class="pl-3 tracking-wide font-roboto md:text-[3rem] text-[42px] text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 via bg-purple-300 to-purple-800 text-[#bdbdbd] flex-shrink flex-row justify-left items-center mb-[2rem] transition-transform ease-in duration-200 group-hover:-translate-y-2"
           >
             Hello There
           </h2>
           <h3
-            class="md:text-[40px] text-[22px] md:mr-[3rem] pt-[1px] flex-col text-slate-300 transition-transform ease-in duration-200 group-hover:-translate-y-2"
+            class="pl-2 md:text-[40px] text-[31px] md:mr-[3rem] pt-[1px] flex-col text-slate-300 transition-transform ease-in duration-200 group-hover:-translate-y-2"
           >
             I am Kabeer. An India Based
             <span
@@ -155,16 +158,16 @@ ____  __.     ___.                           _________.__               .__   ._
 
     <section
       id="about"
-      class="p-20 justify-center flex items-center h-[100vh] border-t-[2px] border-[rgba(255,255,255,0.1)] flex-col place-content-evenly"
+      class="p-[2vh] justify-center flex items-center h-[100vh] md:h-[70vh] border-t-[2px] border-[rgba(255,255,255,0.1)] flex-col place-content-evenly"
     >
-      <h1 class="text-[#cdcdcd] text-[40px] mb-20">
+      <h1 class="text-[#cdcdcd] text-[40px] mb-10">
         About <span class="text-neutral-500">Me</span>
       </h1>
       <div
         class="xl:flex xl:flex-wrap xl:h-[22rem] h-[28rem] xl:w-[65%] w-full group border-[2px] border-[rgba(255,255,255,0.1)] rounded-md backdrop-blur-lg bg-[(46,3,99)] shadow-xl/20 top-[6vh] backdrop:-opacity-100 md:px-7 justify-center items-center shadow-slate-400 transition-colors ease-in duration-200 hover:bg-gradient-to-b hover:from-[rgba(144,79,248,0.2)] hover:via-[rgba(157,10,226,0.1)] hover:to-[rgba(324,211,238,0.0)]"
       >
         <p
-          class="md:flex-col md:p-3 m-[3vh] text-slate-300 md:text-[30px] transition-transform ease-in duration-200 group-hover:-translate-y-2"
+          class="md:flex-col md:p-3 m-[3vh] text-[22px] text-slate-300 md:text-[30px] transition-transform ease-in duration-200 group-hover:-translate-y-2"
         >
           Hello there, I am Kabeer Singh and I am an India based frontend
           website developer and also a discord web developer. I work according
@@ -177,7 +180,7 @@ ____  __.     ___.                           _________.__               .__   ._
 
     <section
       id="skills"
-      class="p-20 justify-center flex items-center h-[100vh] mb-20 flex-col place-content-evenly"
+      class="p-[2vh] justify-center flex items-center h-[100vh] md:h-[70vh] mb-20 flex-col place-content-evenly"
     >
       <h1 class="text-[#cbc4c4] text-[40px] mb-20">Skills</h1>
       <div class="flex flex-wrap items-center justify-center gap-4">
@@ -256,29 +259,51 @@ ____  __.     ___.                           _________.__               .__   ._
 
     <section
       id="projects"
-      class="p-20 justify-center flex items-center md:h-[100vh] place-content-evenly flex-col"
+      class="p-20 justify-center flex items-center md:h-[100vh] place-content-evenly flex-col md:col-span-2 md:grid-cols-1"
     >
       <h1 class="text-[#cbc4c4] text-[40px] mb-20">Projects</h1>
       <div
-        class="h-full flex items-center justify-center relative flex-col md:flex-wrap"
+        class="h-full flex items-center justify-center relative flex-col md:flex-wrap md:col-span-2 md:grid-cols-1"
       >
-        <div
-          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/astromaestroweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
+        <a
+          href="https://astromaestro.vercel.app/"
+          target="_blank"
+          style="text-decoration: none"
         >
-          <a
-            href="https://astromaestro.vercel.app/"
-            class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] to-[rgba(255,255,255,0.1)] text-white justify-center top-9 mt-[33rem] py-6 left-8 flex text-center bottom-0 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-purple-700"
-            >Astromaestro<i class="bx bx-right-arrow-alt bx-sm"></i
-          ></a>
-        </div>
-        <div
-          class="group card font-roboto w-[300px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/elesyaweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[1000px] cursor-pointer md:hover:saturate-100"
+          <div
+            class="group card font-roboto w-[200px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/astromaestroweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[950px] cursor-pointer md:hover:saturate-100"
+          >
+            <p
+              class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] to-[rgba(255,255,255,0.1)] text-white justify-center mt-[0rem] left-8 flex text-center bottom-0 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-purple-700"
+            >
+              Astromaestro<i class="bx bx-right-arrow-alt bx-sm"></i>
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://gizmowidgets.vercel.app/"
+          target="_blank"
+          style="text-decoration: none"
         >
-          <a
-            href="/work-elesya.html"
-            class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)] text-white justify-center top-9 mt-[33rem] py-6 left-8 flex text-center bottom-0 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-pink-400"
-            >Elesya<i class="bx bx-right-arrow-alt bx-sm"></i
-          ></a>
+          <div
+            class="group card font-roboto w-[200px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/gizmowidgets.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[950px] cursor-pointer md:hover:saturate-100"
+          >
+            <p
+              class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)] text-white justify-center top-9 py-6 left-8 flex text-center bottom-0 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-pink-400"
+            >
+              Gizmo Widgets<i class="bx bx-right-arrow-alt bx-sm"></i>
+            </p>
+          </div>
+        </a>
+        <div
+          class="group card font-roboto w-[200px] h-[600px] m-[10px] rounded-[50px] md:saturate-50 bg-[url('/elesyaweb.png')] bg-cover bg-center relative md:transition-width md:duration-500 md:hover:w-[950px] cursor-pointer md:hover:saturate-100"
+        >
+          <p
+            class="rounded-b-[50px] bg-[#090b0d] bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)] text-white justify-center top-9 py-6 left-8 flex text-center bottom-0 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[25px] hover:text-pink-400"
+          >
+            Elesya<i class="bx bx-right-arrow-alt bx-sm"></i>
+          </p>
         </div>
       </div>
     </section>
@@ -286,7 +311,7 @@ ____  __.     ___.                           _________.__               .__   ._
     <footer
       class="border-t-[1px] m-20 shadow-white bg-[#090b0d] text-white text-lg bg-gradient-to-r from-[rgba(105,58,161,0.3)] via-[rgba(255,255,255,0.1)] to-[rgba(72,08,150,0.2)]"
     >
-      <p class="md:ml-[10rem] mt-10">&copy; Copyright 2025 by Kabeer Singh</p>
+      <p class="md:ml-[10rem] mt-10">&copy; 2026 by Kabeer Singh</p>
     </footer>
     <script src="script.js"></script>
   </body>
